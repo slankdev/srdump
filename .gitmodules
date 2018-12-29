@@ -1,0 +1,6 @@
+[submodule "libslankdev"]
+	path = libslankdev
+	url = https://github.com/slankdev/libslankdev.git
+[submodule "argparse"]
+	path = argparse
+	url = https://github.com/hbristow/argparse.git
