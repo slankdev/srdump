@@ -1,5 +1,55 @@
 /srdump
 
+
+debhelper-build-stamp
+.DS_Store
+.debhelper
+*.deb
+*.dsc
+*.build
+*.buildinfo
+*.changes
+*.tar.gz
+*.log
+*.substvars
+/.vagrant
+/*/debian/srdump
+/*/hello
+/tutorial-1/packageroot/usr
+
+### autoconf/automake root stuff
+
+/compile
+/config.log
+/config.h
+/config.cache
+/config.status
+/config.guess
+/config.sub
+/config.version
+/ltmain.sh
+/stamp-h
+/stamp-h[0-9]*
+*-stamp
+/INSTALL
+/depcomp
+/missing
+/install-sh
+/mkinstalldirs
+/ylwrap
+/autom4te*.cache
+/configure.lineno
+/configure
+/config.h.in
+/confdefs.h
+/conftest
+/conftest.err
+/aclocal.m4
+/libtool
+/libtool.orig
+/Makefile
+/Makefile.in
+
 # Prerequisites
 *.d
 

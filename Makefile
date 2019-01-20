@@ -7,20 +7,18 @@ SRC = main.cc
 OBJ = $(SRC:.cc=.o)
 TARGET = srdump
 
-all: $(OBJ)
+srdump: $(OBJ)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJ) $(LDFLAGS)
 
 clean:
 	rm -f $(OBJ) $(TARGET)
 
-install: all
-	mkdir -p /usr/local/bin
-	cp srdump /usr/local/bin/srdump
+install: srdump
+	install -m 0755 srdump /usr/local/bin
 
-run: all
-	sudo ip netns exec ns ./srdump -i net0 -Q out
+uninstall:
+	rm /usr/local/bin/srdump
 
 install_docker:
 	for c in `docker ps --format "{{.Names}}"`; do\
 		docker cp srdump $$c:/usr/bin/srdump ; done
-

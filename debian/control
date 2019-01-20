@@ -1,0 +1,11 @@
+Source: srdump
+Priority: optional
+Maintainer: Hiroki Shirokura <slankdev@coe.ad.jp>
+Build-Depends: debhelper (>= 5), libpcap-dev
+Standards-Version: 0.0.0
+Homepage: http://dpdk.ninja
+
+Package: srdump
+Architecture: any
+Depends: libpcap-dev
+Description: testtest
